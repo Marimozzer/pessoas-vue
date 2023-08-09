@@ -1,23 +1,22 @@
 
 <template>
-       <div class="dashboard">
-       <h1>{{ msg }}</h1>
+    <div class="dashboard">
+        <h1>{{ msg }}</h1>
     </div>
-  </template>
+</template>
   
-  <script>
-  export default {
+<script>
+export default {
     name: 'DashboardView',
-    data(){
-        return{
+    data() {
+        return {
             msg: 'Tela de Dashboard'
         }
     }
 
-  }
-  </script>
+}
+</script>
   
-   <style>
+<style>
 
-  
 </style>

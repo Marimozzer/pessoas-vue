@@ -33,18 +33,19 @@ function update(pessoa){
     });
 }
 
-// function deletar(id){
-//     return new Promise((resolve,reject)=> {
-//         return api.delete('/pessoa/${id}')
-//         .then(response => resolve(response))
-//         .catch(error => reject(error));
-//     });
-// }
+function deletar(id){
+    return new Promise((resolve, reject) => {
+        return api.delete(`/pessoa/${id}`)
+        .then(response => resolve(response))
+        .catch(error => reject(error));
+    });
+}
+
 
 export default{
     getAll,
      getAllByID,
      create,
      update, 
-    //  deletar
+     deletar
 }
